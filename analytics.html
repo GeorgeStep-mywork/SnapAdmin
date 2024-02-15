@@ -269,17 +269,70 @@
 
   </header><!-- End Header -->
 
-  <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
+
+   <!-- ======= Sidebar ======= -->
+   <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link " href="index.html">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bar-chart"></i><span>Analytics</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="general-analytics.html">
+              <i class="bi bi-circle"></i><span>General</span>
+            </a>
+          </li>
+          <li>
+            <a href="registrations-analytics.html">
+              <i class="bi bi-circle"></i><span>Registrations</span>
+            </a>
+          </li>
+          <li>
+            <a href="coupon-analytics.html">
+              <i class="bi bi-circle"></i><span>Coupons</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Analytics Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="access.html">
+          <i class="bi bi-file-earmark-lock"></i>
+          <span>Access</span>
+        </a>
+      </li><!-- End Access Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="registered-tickets.html">
+          <i class="ri-ticket-2-line"></i>
+          <span>Registered Tickets</span>
+        </a>
+      </li><!-- End Access Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="coupons.html">
+          <i class="ri-coupon-3-line"></i>
+          <span>Coupon Generation</span>
+        </a>
+      </li><!-- End Access Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="coupons.html">
+          <i class="bi bi-upc-scan"></i>
+          <span>Checker</span>
+        </a>
+      </li><!-- End Access Page Nav -->
+
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
@@ -406,12 +459,12 @@
       </li><!-- End Tables Nav -->
 
       <li class="nav-item">
-        <a class="nav-link " data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="charts-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="charts-chartjs.html" class="active">
+            <a href="charts-chartjs.html">
               <i class="bi bi-circle"></i><span>Chart.js</span>
             </a>
           </li>

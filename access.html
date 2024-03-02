@@ -573,7 +573,7 @@
 
     <section class="section">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-12">
 
             <div class="card">
               <div class="card-body">
@@ -582,11 +582,11 @@
   
                 <!-- Browser Default Validation -->
                 <form class="row lg-3">
-                  <div class="col-md-8">
+                  <div class="col-md-4">
                     <label for="validationDefault01" class="form-label">Name</label>
                     <input type="text" class="form-control" id="validationDefault01" value="John" required>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-2">
                     <label for="validationDefault04" class="form-label">Power</label>
                     <select class="form-select" id="validationDefault04" required>
                       <option selected disabled value="">Choose</option>
@@ -594,14 +594,14 @@
                       <option>Checker</option>
                     </select>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-3">
                     <label for="validationDefaultUsername" class="form-label">Username</label>
                     <div class="input-group">
                       <span class="input-group-text" id="inputGroupPrepend2">@</span>
                       <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-3">
                     <label for="validationDefault03" class="form-label">Password</label>
                     <input type="text" class="form-control" id="validationDefault03" required>
                   </div>
@@ -623,7 +623,7 @@
             </div>
   
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Access Holders</h5>
@@ -637,6 +637,7 @@
                         <th scope="col">Username</th>
                         <th scope="col">Password</th>
                         <th scope="col">Power</th>
+                        <th scope="col">Action</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -646,6 +647,34 @@
                         <td>john_</td>
                         <td>2825</td>
                         <td>Checker</td>
+                        <td><!-- Vertically centered Modal -->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verticalycentered">
+                            Edit
+                          </button>
+                          <div class="modal fade" id="verticalycentered" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Vertically Centered</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div><!-- End Vertically centered Modal-->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verticalycentered">
+                            Delete
+                          </button>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verticalycentered">
+                            Make Inactive
+                          </button>
+                        </td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>

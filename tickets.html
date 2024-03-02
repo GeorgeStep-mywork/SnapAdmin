@@ -561,149 +561,132 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Registered Tickets</h1>
+      <h1>Coupon Generation</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <!-- <li class="breadcrumb-item">Pages</li> -->
-          <li class="breadcrumb-item active">Registered Tickets</li>
+          <li class="breadcrumb-item active">Coupon</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
     <section class="section">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-6">
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Generate Ticket</h5>
+                <!-- <p>Browser default validation with using the <code>required</code> keyword. Try submitting the form below. Depending on your browser and OS, you’ll see a slightly different style of feedback.</p> -->
+  
+                <!-- Browser Default Validation -->
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="validationDefault01" class="form-label">Coupon Name</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="John" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationDefault01" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="validationDefault01" value="Offer for" required>
+                  </div>
+                  <!-- <div class="col-md-4">
+                    <label for="validationDefault02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" value="Doe" required>
+                  </div> -->
+                  <div class="col-md-3">
+                    <label for="validationDefault04" class="form-label">Discount</label>
+                    <select class="form-select" id="validationDefault04" required>
+                      <option selected disabled value="">Choose</option>
+                      <option>Percentage</option>
+                      <option>Amount</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationDefaultUsername" class="form-label">Value</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationDefault03" class="form-label">Limit</label>
+                    <input type="number" class="form-control" id="validationDefault03" required>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationDefault04" class="form-label">Visible</label>
+                    <select class="form-select" id="validationDefault04" required>
+                      <option selected disabled value="">Choose</option>
+                      <option selected="selected">Show</option>
+                      <option>Hide</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <!-- <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required> -->
+                      <!-- <label class="form-check-label" for="invalidCheck2">
+                        Agree to terms and conditions
+                      </label> -->
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Generate</button>
+                  </div>
+                </form>
+                <!-- End Browser Default Validation -->
+  
+              </div>
+            </div>
+  
+          </div>
+
+          <div class="col-lg-6">
             <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Event Registrations</h5>
+                  <h5 class="card-title">Coupon Details</h5>
                   <!-- <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p> -->
                   <!-- Bordered Table -->
                   <table class="table table-bordered">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Full Name</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Email Sent?</th>
-                        <th scope="col">Checked-In?</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">Coupon Code</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Used</th>
+                        <th scope="col">Limit</th>
+                        <th scope="col">Revenue Drive</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>John</td>
-                        <td>02/03/24</td>
-                        <td><i class="ri-mail-check-line"></i></td>
-                        <td><i class="ri-checkbox-circle-line"></i></td>
-                        <td>
-              <a class="" data-bs-toggle="modal" data-bs-target="#verticalycentered">
-                <i class="ri-edit-box-fill"></i>
-              </a>
-              <div class="modal fade" id="verticalycentered" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Edit Attendee</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      Non omnis incidunt qui sed occaecati magni asperiores est mollitia. Soluta at et reprehenderit. Placeat autem numquam et fuga numquam. Tempora in facere consequatur sit dolor ipsum. Consequatur nemo amet incidunt est facilis. Dolorem neque recusandae quo sit molestias sint dignissimos.
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End Vertically centered Modal-->  <i class="ri-mail-fill"></i></td>
+                        <td>OFFER10</td>
+                        <td>Everyone</td>
+                        <td>28</td>
+                        <td>50</td>
+                        <td>₹10000</td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>Mathew</td>
-                        <td>02/03/24</td>
-                        <td><i class="ri-mail-close-line"></i></td>
-                        <td><i class="ri-checkbox-circle-line"></i></td>
+                        <td>VENOM20</td>
+                        <td>Call me Venom</td>
+                        <td>35</td>
+                        <td>100</td>
+                        <td>₹6000</td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
-                        <td>Joseph</td>
-                        <td>15/03/24</td>
-                        <td><i class="ri-checkbox-circle-line"></i></td>
-                        <td><i class="ri-checkbox-indeterminate-line"></i></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">4</th>
-                        <td>Jacob</td>
-                        <td>15/03/24</td>
-                        <td><i class="ri-error-warning-line"></i></td>
-                        <td><i class="ri-checkbox-indeterminate-line"></i></td>
+                        <td>JOJI15</td>
+                        <td>Joji Thampi</td>
+                        <td>80</td>
+                        <td>90</td>
+                        <td>₹8000</td>
                       </tr>
                     </tbody>
                   </table>
                   <!-- End Bordered Table -->
-                    <h5 class="card-title">Event Registrations <span>| Today</span></h5>
-  
-                    <table class="table table-borderless datatable">
-                      <thead>
-                        <tr>
-                          <th scope="col">#</th>
-                          <th scope="col">Full Name</th>
-                          <!-- <th scope="col">Product</th> -->
-                          <th scope="col">Amount</th>
-                          <th scope="col">Date</th>
-                          <th scope="col">Email</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row"><a href="#">#2457</a></th>
-                          <td>Brandon Jacob</td>
-                          <!-- <td><a href="#" class="text-primary">At praesentium minu</a></td> -->
-                          <td>₹64</td>
-                          <td>02/03/24</td>
-                          <td><span class="badge bg-success">Sent</span></td>
-                        </tr>
-                        <tr>
-                          <th scope="row"><a href="#">#2147</a></th>
-                          <td>Bridie Kessler</td>
-                          <!-- <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td> -->
-                          <td>₹47</td>
-                          <td>02/03/24</td>
-                          <!-- <td><span class="badge bg-warning">Pending</span></td> -->
-                          <td><span class="badge bg-danger">Pending</span></td>
-                        </tr>
-                        <tr>
-                          <th scope="row"><a href="#">#2049</a></th>
-                          <td>Ashleigh Langosh</td>
-                          <!-- <td><a href="#" class="text-primary">At recusandae consectetur</a></td> -->
-                          <td>₹147</td>
-                          <td>08/03/24</td>
-                          <td><span class="badge bg-success">Sent</span></td>
-                        </tr>
-                        <tr>
-                          <th scope="row"><a href="#">#2644</a></th>
-                          <td>Angus Grady</td>
-                          <!-- <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td> -->
-                          <td>₹67</td>
-                          <td>10/03/24</td>
-                          <td><span class="badge bg-danger">Pending</span></td>
-                        </tr>
-                        <tr>
-                          <th scope="row"><a href="#">#2644</a></th>
-                          <td>Raheem Lehner</td>
-                          <!-- <td><a href="#" class="text-primary">Sunt similique distinctio</a></td> -->
-                          <td>₹165</td>
-                          <td>16/03/24</td>
-                          <td><span class="badge bg-success">Sent</span></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                </div>
               </div>
           </div>
-          
       </div>
     </section>
 
